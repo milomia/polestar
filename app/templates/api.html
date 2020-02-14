@@ -1,0 +1,11 @@
+{% block content %}
+<div>
+  {% for ship in ships %}
+       <a href="{% url 'ship_detail' ship.id %}">
+        <h3>{{ship.imo_number}}</h3>
+       </a>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
+~               

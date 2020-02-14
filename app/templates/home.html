@@ -1,0 +1,13 @@
+{% block content %}
+<div>
+  {% for position in positions %}
+        <h3>{{position.imo_number}}</h3>
+        <h3>{{position.timestamp}}</h3>
+        <h3>{{position.latitude}}</h3>
+        <h3>{{position.longitude}}</h3>
+       </a>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
+~               
